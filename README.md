@@ -27,14 +27,13 @@ $$R_{max} = \left(\frac{P_t G \sigma A_e}{(4 \pi)^2 S_{min}} \right)^{\frac{1}{4
 
 ### Program:
 
-```sci
-
+```
 sigma = 0.5;
 Ae = 1;
 Smin = 1e-10;
 
-G = 50;
-Ppeak = 5000:100:10000;
+G = 30;
+Ppeak = 4:1:10;
 
 Rmax_values = zeros(1, length(Ppeak));
 
@@ -50,8 +49,8 @@ ylabel('R_{max}');
 title('Variation of R_{max} with P_t');
 
 
-Ppeak = 4000;    
-G = 55:5:100;     
+Ppeak = 3;    
+G = 20:5:100;     
 Rmax_values = zeros(1, length(G));
 
 for i = 1:length(G)
@@ -65,8 +64,8 @@ ylabel('R_{max}');
 title('Variation of R_{max} with G');
 
 
-G = 50;
-Ppeak = 4000;    // Same as table 3
+G = 10;
+Ppeak = 2;    
 
 Smin_values = logspace(-12, -8, 50);
 
@@ -83,17 +82,19 @@ ylabel('R_{max}');
 title('Variation of R_{max} with S_{min}');
 give correct code with header file
 
-
 ```
 
----
-
 ### Output Waveform:
+
+<img width="1640" height="988" alt="Screenshot 2025-12-05 032415" src="https://github.com/user-attachments/assets/584082e2-3930-4dc8-a723-0096d3172ce9" />
 
 
 ---
 
 ### Manual Calculation:
+
+![WhatsApp Image 2025-12-04 at 15 38 36_8b6df173](https://github.com/user-attachments/assets/35123cb0-a32e-43d7-b34c-f5c1c59354fd)
+
 
 
 ---
